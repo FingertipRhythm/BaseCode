@@ -3,10 +3,10 @@ package ifelse;
 public class IfTest6 {
 
 	public static void main(String[] args) {
-		// ÈçºÎ»ØÈ¥Ò»¸öËæ»úÊı: 10-99(Á½Î»Êı)
+		// å¦‚ä½•å›å»ä¸€ä¸ªéšæœºæ•°: 10-99(ä¸¤ä½æ•°)
 		int value = (int) (Math.random() * 90 + 10); // [0.0,1.0) -> [0.0,90.0) -> [10.0,100.0) -> [10,99]
 
-		// ¹«Ê½:[a,b]: (int)(Math.random()*(b-a+1)+a);
+		// å…¬å¼:[a,b]: (int)(Math.random()*(b-a+1)+a);
 
 		System.out.println(value);
 	}

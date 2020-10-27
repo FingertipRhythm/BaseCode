@@ -3,9 +3,9 @@ package forloop;
 import java.util.Scanner;
 
 /**
- * ÌâÄ¿:ÊäÈëÁ½¸öÕıÕûÊımºÍn,ÇóÆä×î´ó¹«Ô¼ÊıºÍ×îĞ¡¹«±¶Êı
- * ±ÈÈç:12ºÍ20µÄ×î´ó¹«Ô¼ÊıÊÇ4,×îĞ¡¹«±¶ÊıÊÇ60
- * ËµÃ÷:break¹Ø¼ü×ÖµÄÊ¹ÓÃ
+ * é¢˜ç›®:è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°må’Œn,æ±‚å…¶æœ€å¤§å…¬çº¦æ•°å’Œæœ€å°å…¬å€æ•°
+ * æ¯”å¦‚:12å’Œ20çš„æœ€å¤§å…¬çº¦æ•°æ˜¯4,æœ€å°å…¬å€æ•°æ˜¯60
+ * è¯´æ˜:breakå…³é”®å­—çš„ä½¿ç”¨
  * 
  * @author ASUS
  *
@@ -15,27 +15,27 @@ public class ForTest2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÕıÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ­£æ•´æ•°:");
 		int m = scanner.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÕıÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ­£æ•´æ•°:");
 		int n = scanner.nextInt();
 		
-		//»ñÈ¡×î´ó¹«Ô¼Êı
-		//»ñÈ¡Á½¸öÊıÖĞµÄ½ÏĞ¡Öµ
+		//è·å–æœ€å¤§å…¬çº¦æ•°
+		//è·å–ä¸¤ä¸ªæ•°ä¸­çš„è¾ƒå°å€¼
 		int min=(m<=n)?m:n;
 		for (int i = min; i >= 1; i--) {
 			if (m%i==0 && n%i==0) {
-				System.out.println("×î´ó¹«Ô¼ÊıÎª:"+i);
-				break;//Ò»µ©ÔÚÑ­»·ÖĞÖ´ĞĞµ½break,¾ÍÌø³öÑ­»·
+				System.out.println("æœ€å¤§å…¬çº¦æ•°ä¸º:"+i);
+				break;//ä¸€æ—¦åœ¨å¾ªç¯ä¸­æ‰§è¡Œåˆ°break,å°±è·³å‡ºå¾ªç¯
 			}
 		}
 		
-		//»ñÈ¡×îĞ¡¹«±¶Êı
-		//»ñÈ¡Á½¸öÊıÖĞµÄ½Ï´óÖµ
+		//è·å–æœ€å°å…¬å€æ•°
+		//è·å–ä¸¤ä¸ªæ•°ä¸­çš„è¾ƒå¤§å€¼
 		int max = (m>=n)?m:n;
 		for (int i = max; i < m*n; i++) {
 			if (i%m==0 && i%n==0) {
-				System.out.println("×îĞ¡¹«±¶ÊıÎª:"+i);
+				System.out.println("æœ€å°å…¬å€æ•°ä¸º:"+i);
 				break;
 			}
 		}

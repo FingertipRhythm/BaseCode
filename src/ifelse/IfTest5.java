@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class IfTest5 {
 
 	public static void main(String[] args) {
-		// ²âËã¹·¹·µÄÄêÁä
+		// æµ‹ç®—ç‹—ç‹—çš„å¹´é¾„
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¹·¹·µÄÄêÁä:");
+		System.out.println("è¯·è¾“å…¥ç‹—ç‹—çš„å¹´é¾„:");
 		int dogAge = scanner.nextInt();
 		if (dogAge > 0 && dogAge <= 2) {
-			System.out.println("Ïàµ±ÓÚÈËµÄÄêÁä" + (dogAge * 10.5));
+			System.out.println("ç›¸å½“äºäººçš„å¹´é¾„" + (dogAge * 10.5));
 		} else if (dogAge > 2) {
-			System.out.println("Ïàµ±ÓÚÈËµÄÄêÁä" + (2 * 10.5 + (dogAge - 2) * 4));
+			System.out.println("ç›¸å½“äºäººçš„å¹´é¾„" + (2 * 10.5 + (dogAge - 2) * 4));
 		} else {
-			System.out.println("¹·¹·»¹Ã»ÓĞ³öÉúÄØ");
+			System.out.println("ç‹—ç‹—è¿˜æ²¡æœ‰å‡ºç”Ÿå‘¢");
 		}
 
 	}

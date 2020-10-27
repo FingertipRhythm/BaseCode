@@ -3,13 +3,13 @@ package dowhile;
 import java.util.Scanner;
 
 /**
- * Ƕ��ѭ����ʹ��:
- * 1.Ƕ��ѭ��:��һ��ѭ���ṹA��������һ��ѭ���ṹB��ѭ������,�͹�����Ƕ��ѭ��
- * 2.���ѭ��:ѭ���ṹB
- * 	   �ڲ�ѭ��:ѭ���ṹA
- * 3.˵��:
- * 1).�ڲ�ѭ���ṹ����һ��,ֻ�൱�����ѭ��ѭ����ִ����һ��
- * 2).�������ѭ����Ҫִ��m��,�ڲ�ѭ����Ҫִ��n��.��ʱ�ڲ�ѭ����ѭ����һ��ִ����m*n��
+ * 嵌套循环的使用:
+ * 1.嵌套循环:将一个循环结构A声明在另一个循环结构B的循环体中,就构成了嵌套循环
+ * 2.外层循环:循环结构B
+ * 	   内层循环:循环结构A
+ * 3.说明:
+ * 1).内层循环结构遍历一遍,只相当于外层循环循环体执行了一次
+ * 2).假设外层循环需要执行m次,内层循环需要执行n次.此时内层循环的循环体一共执行了m*n次
  * @author pan
  *
  */
@@ -36,7 +36,7 @@ public class ForForTest {
 		}
 		System.out.println("\n");
 		
-		/*			i(�к�)  j(*�ĸ���)
+		/*			i(行号)  j(*的个数)
 		 * *		1		1
 		 * **		2		2
 		 * ***		3		3
@@ -50,7 +50,7 @@ public class ForForTest {
 			System.out.println();
 		}
 		
-		/*			i(�к�)  j(*�ĸ���)	����:i+j=6   ���仰˵: j=6-i
+		/*			i(行号)  j(*的个数)	规律:i+j=6   换句话说: j=6-i
 		 * *****	1		5
 		 * ****		2		4
 		 * ***		3		3
@@ -77,9 +77,9 @@ public class ForForTest {
 		**
 		*
 		*/
-		//��
+		//略
 		
-		/*			i(�к�)  j(*�ĸ���)
+		/*			i(行号)  j(*的个数)
 		   *		1		1
 		  ***		2		3
 		 *****		3		5
@@ -88,7 +88,7 @@ public class ForForTest {
 		  ***		2		3
 		   *		3		1
 		*/
-		//�ϰ벿��
+		//上半部分
 		int count=0;
 		for (int i = 1; i <= 4; i++) {
 			for (int j = 1; j <= 4-i; j++) {
@@ -101,7 +101,7 @@ public class ForForTest {
 			count++;
 			System.out.println();
 		}
-		//�°벿��
+		//下半部分
 		int sum=6;
 		for (int i = 1; i <= 3; i++) {
 			for (int j = 1; j <= i; j++) {

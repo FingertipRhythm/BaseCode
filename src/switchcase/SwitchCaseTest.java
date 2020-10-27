@@ -1,22 +1,22 @@
 package switchcase;
 
 /**
- * switch-case¸ñÊ½
+ * switch-caseæ ¼å¼
  * 
- * 1. switch(±í´ïÊ½){ case ³£Á¿1: Óï¾ä1; //break; case ³£Á¿2: Óï¾ä2; //break; ... case ³£Á¿n:
- * Óï¾än; //break; default: Óï¾ä; //break; }
+ * 1. switch(è¡¨è¾¾å¼){ case å¸¸é‡1: è¯­å¥1; //break; case å¸¸é‡2: è¯­å¥2; //break; ... case å¸¸é‡n:
+ * è¯­å¥n; //break; default: è¯­å¥; //break; }
  * 
- * 2,ËµÃ÷: 
- * 1).¸ù¾İswitch±í´ïÊ½ÖĞµÄÖµ,Ò»´ÎÆ¥Åä¸÷¸öcaseÖĞµÄ³£Á¿.Ò»µ©Æ¥Åä³É¹¦,Ôò½øÈëÏàÓ¦µÄcase½á¹¹ÖĞ,µ÷ÓÃÆäÖ´ĞĞÓï¾ä.
- * 	µ±µ÷ÓÃÍêÖ´ĞĞÓï¾äÒÔºó,ÔòÈÔÈ»¼ÌĞøÏòÏÂÖ´ĞĞÆäËûcase½á¹¹ÖĞµÄÖ´ĞĞÓï¾ä,Ö±µ½Óöµ½break¹Ø¼ü×Ö»ò´Ëswitch-case½á¹¹ 
- * 	Ä©Î²½áÊøÎªÖ¹.
- * 2).brak,¿ÉÒÔÊ¹ÓÃÔÚswitch-case½á¹¹ÖĞ,±íÊ¾Ò»µ© Ö´ĞĞµ½´Ë¹Ø¼ü×Ö,¾ÍÌø³öswitch-case½á¹¹.
- * 3).switch½á¹¹ÖĞµÄ±í´ïÊ½,Ö»ÄÜÊÇÈçÏÂµÄ6ÖÖÊı¾İÀàĞÍÖ®Ò»:
- * 	byte,short,char,int,Ã¶¾ÙÀàĞÍ(JDK5.0ĞÂÔö),StringÀàĞÍ(JDK7.0ĞÂÔö)
- * 4).caseÖ®ºóÖ»ÄÜÉùÃ÷³£Á¿,²»ÄÜÉùÃ÷·¶Î§
- * 5).break¹Ø¼ü×ÖÊÇ¿ÉÑ¡µÄ.
- * 6).default:Ïàµ±ÓÚif-else½á¹¹ÖĞµÄelse.
- * 		default½á¹¹ÊÇ¿ÉÑ¡µÄ.¶øÇÒÎ»ÖÃÊÇÁé»îµÄ.
+ * 2,è¯´æ˜: 
+ * 1).æ ¹æ®switchè¡¨è¾¾å¼ä¸­çš„å€¼,ä¸€æ¬¡åŒ¹é…å„ä¸ªcaseä¸­çš„å¸¸é‡.ä¸€æ—¦åŒ¹é…æˆåŠŸ,åˆ™è¿›å…¥ç›¸åº”çš„caseç»“æ„ä¸­,è°ƒç”¨å…¶æ‰§è¡Œè¯­å¥.
+ * 	å½“è°ƒç”¨å®Œæ‰§è¡Œè¯­å¥ä»¥å,åˆ™ä»ç„¶ç»§ç»­å‘ä¸‹æ‰§è¡Œå…¶ä»–caseç»“æ„ä¸­çš„æ‰§è¡Œè¯­å¥,ç›´åˆ°é‡åˆ°breakå…³é”®å­—æˆ–æ­¤switch-caseç»“æ„ 
+ * 	æœ«å°¾ç»“æŸä¸ºæ­¢.
+ * 2).brak,å¯ä»¥ä½¿ç”¨åœ¨switch-caseç»“æ„ä¸­,è¡¨ç¤ºä¸€æ—¦ æ‰§è¡Œåˆ°æ­¤å…³é”®å­—,å°±è·³å‡ºswitch-caseç»“æ„.
+ * 3).switchç»“æ„ä¸­çš„è¡¨è¾¾å¼,åªèƒ½æ˜¯å¦‚ä¸‹çš„6ç§æ•°æ®ç±»å‹ä¹‹ä¸€:
+ * 	byte,short,char,int,æšä¸¾ç±»å‹(JDK5.0æ–°å¢),Stringç±»å‹(JDK7.0æ–°å¢)
+ * 4).caseä¹‹ååªèƒ½å£°æ˜å¸¸é‡,ä¸èƒ½å£°æ˜èŒƒå›´
+ * 5).breakå…³é”®å­—æ˜¯å¯é€‰çš„.
+ * 6).default:ç›¸å½“äºif-elseç»“æ„ä¸­çš„else.
+ * 		defaultç»“æ„æ˜¯å¯é€‰çš„.è€Œä¸”ä½ç½®æ˜¯çµæ´»çš„.
  * @author pan
  *
  */
@@ -45,19 +45,19 @@ public class SwitchCaseTest {
 		String season = "summer";
 		switch (season) {
 		case "spring":
-			System.out.println("´ºÅ¯»¨¿ª");
+			System.out.println("æ˜¥æš–èŠ±å¼€");
 			break;
 		case "summer":
-			System.out.println("ÏÄÈÕÑ×Ñ×");
+			System.out.println("å¤æ—¥ç‚ç‚");
 			break;
 		case "autumn":
-			System.out.println("Çï¸ßÆøË¬");
+			System.out.println("ç§‹é«˜æ°”çˆ½");
 			break;
 		case "winter":
-			System.out.println("¶¬Ñ©°¨°¨");
+			System.out.println("å†¬é›ªçš‘çš‘");
 			break;
 		default:
-			System.out.println("¼¾½ÚÊäÈëÓĞÎó!");
+			System.out.println("å­£èŠ‚è¾“å…¥æœ‰è¯¯!");
 			break;
 		}
 

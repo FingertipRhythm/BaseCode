@@ -3,13 +3,13 @@ package dowhile;
 import java.util.Scanner;
 
 /**
- * ÌâÄ¿:´Ó¼üÅÌ¶ÁÈë¸öÊý²»È·¶¨µÄÕûÊý,²¢ÅÐ¶Ï¶ÁÈëµÄÕûÊýºÍ¸ºÊýµÄ¸öÊý,ÊäÈëÎª0Ê±½áÊø
+ * é¢˜ç›®:ä»Žé”®ç›˜è¯»å…¥ä¸ªæ•°ä¸ç¡®å®šçš„æ•´æ•°,å¹¶åˆ¤æ–­è¯»å…¥çš„æ•´æ•°å’Œè´Ÿæ•°çš„ä¸ªæ•°,è¾“å…¥ä¸º0æ—¶ç»“æŸ
  * 
- * ËµÃ÷:
- * 1.²»ÔÚÑ­»·Ìõ¼þ²¿·ÖÏÞÖÆ´ÎÊýµÄ½á¹¹: for(;;) »ò while(true)
- * 2.½áÊøÑ­»·ÓÐ¼¸ÖÖ·½Ê½?
- * 	·½Ê½Ò»:Ñ­»·Ìõ¼þ²¿·Ö·µ»Øfalse
- * 	·½Ê½¶þ:ÔÚÑ­»·ÌåÖÐ,Ö´ÐÐbreak
+ * è¯´æ˜Ž:
+ * 1.ä¸åœ¨å¾ªçŽ¯æ¡ä»¶éƒ¨åˆ†é™åˆ¶æ¬¡æ•°çš„ç»“æž„: for(;;) æˆ– while(true)
+ * 2.ç»“æŸå¾ªçŽ¯æœ‰å‡ ç§æ–¹å¼?
+ * 	æ–¹å¼ä¸€:å¾ªçŽ¯æ¡ä»¶éƒ¨åˆ†è¿”å›žfalse
+ * 	æ–¹å¼äºŒ:åœ¨å¾ªçŽ¯ä½“ä¸­,æ‰§è¡Œbreak
  * 
  * @author pan
  *
@@ -18,22 +18,22 @@ public class ForWhileTest {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int num = 0;
-		int positiveNumber = 0;// ¼ÇÂ¼ÕýÊýµÄ¸öÊý
-		int negativeNumber = 0;// ¼ÇÂ¼¸ºÊýµÄ¸öÊý
+		int positiveNumber = 0;// è®°å½•æ­£æ•°çš„ä¸ªæ•°
+		int negativeNumber = 0;// è®°å½•è´Ÿæ•°çš„ä¸ªæ•°
 		
 		for(;;) {//while (true) {
 			num = scanner.nextInt();
-			//ÅÐ¶ÏnumµÄÕý¸ºÇé¿ö
+			//åˆ¤æ–­numçš„æ­£è´Ÿæƒ…å†µ
 			if(num>0) {
 				positiveNumber++;
 			}else if (num<0) {
 				negativeNumber++;
 			} else {
-				//Ò»µ©Ö´ÐÐbreak,Ìø³öÑ­»·
+				//ä¸€æ—¦æ‰§è¡Œbreak,è·³å‡ºå¾ªçŽ¯
 				break;
 			}
 		}
-		System.out.println("ÕýÊýµÄ¸öÊýÎª:"+positiveNumber);
-		System.out.println("¸ºÊýµÄ¸öÊýÎª:"+negativeNumber);
+		System.out.println("æ­£æ•°çš„ä¸ªæ•°ä¸º:"+positiveNumber);
+		System.out.println("è´Ÿæ•°çš„ä¸ªæ•°ä¸º:"+negativeNumber);
 	}
 }

@@ -3,13 +3,13 @@ package switchcase;
 import java.util.Scanner;
 
 /**
- * switch-caseÀıÌâ: ´Ó¼üÅÌ·Ö±ğÊäÈëÄê,ÔÂ,ÈÕ,ÅĞ¶ÏÕâÒ»ÌìÊÇµ±ÄêµÄµÚ¼¸Ìì ×¢:ÅĞ¶ÏÒ»ÄêÊÇ·ñÊÇÈòÄêµÄ±ê×¼: 1).¿ÉÒÔ±»4Õû³ı,µ«²»¿ÉÒÔ±»100Õû³ı
- * 2).¿ÉÒÔ±»400Õû³ı
+ * switch-caseä¾‹é¢˜: ä»é”®ç›˜åˆ†åˆ«è¾“å…¥å¹´,æœˆ,æ—¥,åˆ¤æ–­è¿™ä¸€å¤©æ˜¯å½“å¹´çš„ç¬¬å‡ å¤© æ³¨:åˆ¤æ–­ä¸€å¹´æ˜¯å¦æ˜¯é—°å¹´çš„æ ‡å‡†: 1).å¯ä»¥è¢«4æ•´é™¤,ä½†ä¸å¯ä»¥è¢«100æ•´é™¤
+ * 2).å¯ä»¥è¢«400æ•´é™¤
  * 
- * ËµÃ÷:
- * 1.·²ÊÇ¿ÉÒÔÊ¹ÓÃswitch-caseµÄ½á¹¹,¶¼¿ÉÒÔ×ª»»Îªif-else.·´Ö®,²»³ÉÁ¢.
- * 2.µ±ÎÒÃÇĞ©·ÖÖ§½á¹¹Ê±,µ±·¢ÏÖ¼´¿ÉÒÔÊ¹ÓÃswitch-case(Í¬Ê±,switchÖĞ±í´ïÊ½µÄÈ¡ÖµÇé¿ö²»Ì«¶à),
- * 	ÓÖ¿ÉÒÔÊ¹ÓÃif-elseÊ±,ÎÒÃÇÓÅÏÈÑ¡ÔñÊ¹ÓÃswitch-case.Ô­Òò:switch-caseÖ´ĞĞĞ§ÂÊÉÔ¸ß.
+ * è¯´æ˜:
+ * 1.å‡¡æ˜¯å¯ä»¥ä½¿ç”¨switch-caseçš„ç»“æ„,éƒ½å¯ä»¥è½¬æ¢ä¸ºif-else.åä¹‹,ä¸æˆç«‹.
+ * 2.å½“æˆ‘ä»¬äº›åˆ†æ”¯ç»“æ„æ—¶,å½“å‘ç°å³å¯ä»¥ä½¿ç”¨switch-case(åŒæ—¶,switchä¸­è¡¨è¾¾å¼çš„å–å€¼æƒ…å†µä¸å¤ªå¤š),
+ * 	åˆå¯ä»¥ä½¿ç”¨if-elseæ—¶,æˆ‘ä»¬ä¼˜å…ˆé€‰æ‹©ä½¿ç”¨switch-case.åŸå› :switch-caseæ‰§è¡Œæ•ˆç‡ç¨é«˜.
  * @author pan
  *
  */
@@ -17,14 +17,14 @@ public class SwitchCaseTest3 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë2019ÄêµÄyear:");
+		System.out.println("è¯·è¾“å…¥2019å¹´çš„year:");
 		int year = scanner.nextInt();
-		System.out.println("ÇëÊäÈë2019ÄêµÄmonth:");
+		System.out.println("è¯·è¾“å…¥2019å¹´çš„month:");
 		int month = scanner.nextInt();
-		System.out.println("ÇëÊäÈë2019ÄêµÄday:");
+		System.out.println("è¯·è¾“å…¥2019å¹´çš„day:");
 		int day = scanner.nextInt();
 
-		// ¶¨ÒåÒ»¸ö±äÁ¿À´±£´æ×ÜÌìÊı
+		// å®šä¹‰ä¸€ä¸ªå˜é‡æ¥ä¿å­˜æ€»å¤©æ•°
 		int sumDays = 0;
 
 		switch (month) {
@@ -47,7 +47,7 @@ public class SwitchCaseTest3 {
 		case 4:
 			sumDays += 31;
 		case 3:
-			//ÅĞ¶ÏyearÊÇ·ñÎªÈòÄê
+			//åˆ¤æ–­yearæ˜¯å¦ä¸ºé—°å¹´
 			if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
 				sumDays += 29;
 			}else {
@@ -59,7 +59,7 @@ public class SwitchCaseTest3 {
 			sumDays += day;
 		}
 
-		System.out.println(year+"Äê" + month + "ÔÂ" + day + "ÈÕÊÇµ±ÄêµÄµÚ" + sumDays + "Ìì");
+		System.out.println(year+"å¹´" + month + "æœˆ" + day + "æ—¥æ˜¯å½“å¹´çš„ç¬¬" + sumDays + "å¤©");
 	}
 
 }

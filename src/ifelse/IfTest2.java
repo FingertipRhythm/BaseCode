@@ -3,23 +3,23 @@ package ifelse;
 import java.util.Scanner;
 
 /*
- * ±àĞ´³ÌĞò:ÓÉ¼üÅÌÊäÈëÈı¸öÕûÊı·Ö±ğ´æÈë±äÁ¿num1,num2,num3
- * ¶ÔËûÃÇ½øĞĞÅÅĞò(Ê¹ÓÃif-else if-else),²¢ÇÒ´ÓĞ¡µ½´óÊä³ö
+ * ç¼–å†™ç¨‹åº:ç”±é”®ç›˜è¾“å…¥ä¸‰ä¸ªæ•´æ•°åˆ†åˆ«å­˜å…¥å˜é‡num1,num2,num3
+ * å¯¹ä»–ä»¬è¿›è¡Œæ’åº(ä½¿ç”¨if-else if-else),å¹¶ä¸”ä»å°åˆ°å¤§è¾“å‡º
  * 
- * ËµÃ÷:
- * 1.if-else½á¹¹ÊÇ¿ÉÒÔÏà»¥Ç¶Ì×µÄ
- * 2.Èç¹ûif-else½á¹¹ÖĞµÄÖ´ĞĞÓï¾äÖ»ÓĞÒ»ĞĞÊ±,¶ÔÓ¦µÄÒ»¶Ô{}¿ÉÒÔÊ¡ÂÔµÄ.µ«ÊÇ,²»½¨Òé´ó¼ÒÊ¡ÂÔ.
+ * è¯´æ˜:
+ * 1.if-elseç»“æ„æ˜¯å¯ä»¥ç›¸äº’åµŒå¥—çš„
+ * 2.å¦‚æœif-elseç»“æ„ä¸­çš„æ‰§è¡Œè¯­å¥åªæœ‰ä¸€è¡Œæ—¶,å¯¹åº”çš„ä¸€å¯¹{}å¯ä»¥çœç•¥çš„.ä½†æ˜¯,ä¸å»ºè®®å¤§å®¶çœç•¥.
  */
 public class IfTest2 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•´æ•°:");
 		int num1 = scanner.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•´æ•°:");
 		int num2 = scanner.nextInt();
-		System.out.println("ÇëÊäÈëµÚÈı¸öÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸‰ä¸ªæ•´æ•°:");
 		int num3 = scanner.nextInt();
 
 		if (num1 >= num2) {

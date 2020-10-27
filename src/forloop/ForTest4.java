@@ -10,8 +10,8 @@ import java.util.Scanner;
  * **
  * *
  * 
- * 内层循环控制行数
- * 外层循环控制列数
+ * 鍐呭眰寰幆鎺у埗琛屾暟
+ * 澶栧眰寰幆鎺у埗鍒楁暟
  * 
  * @author pan
  *

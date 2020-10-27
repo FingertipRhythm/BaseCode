@@ -3,19 +3,19 @@ package forloop;
 import java.util.Scanner;
 
 /**
- * forÑ­»·½á¹¹µÄÊ¹ÓÃ
- * Ò».Ñ­»·½á¹¹µÄ4¸öÒªËØ
- * 1).³õÊ¼»¯Ìõ¼ş
- * 2).Ñ­»·Ìõ¼ş -->ÊÇbooleanÀàĞÍ
- * 3).Ñ­»·Ìå
- * 4).µü´úÌõ¼ş
+ * forå¾ªç¯ç»“æ„çš„ä½¿ç”¨
+ * ä¸€.å¾ªç¯ç»“æ„çš„4ä¸ªè¦ç´ 
+ * 1).åˆå§‹åŒ–æ¡ä»¶
+ * 2).å¾ªç¯æ¡ä»¶ -->æ˜¯booleanç±»å‹
+ * 3).å¾ªç¯ä½“
+ * 4).è¿­ä»£æ¡ä»¶
  * 
- * ¶ş.forÑ­»·µÄ½á¹¹
+ * äºŒ.forå¾ªç¯çš„ç»“æ„
  * for(1;2;4){
  * 		3
  * }
  * 
- * Ö´ĞĞ¹ı³Ì:1-2-3-4-2-3-4-...-2
+ * æ‰§è¡Œè¿‡ç¨‹:1-2-3-4-2-3-4-...-2
  * 
  * @author ASUS
  *
@@ -26,9 +26,9 @@ public class ForTest {
 		for (int i = 1; i <= 5; i++) {
 			System.out.println("Hello world!");
 		}
-		//i:ÔÚforÑ­»·ÄÚÓĞĞ§,³öÁËforÑ­»·¾ÍÊ§Ğ§ÁË
+		//i:åœ¨forå¾ªç¯å†…æœ‰æ•ˆ,å‡ºäº†forå¾ªç¯å°±å¤±æ•ˆäº†
 		
-		//²âÊÔ
+		//æµ‹è¯•
 		int num=1;
 		for (System.out.print("a"); num <= 3;System.out.print("b"), num++) {
 			System.out.print("c");
@@ -37,9 +37,9 @@ public class ForTest {
 		
 		System.out.println();
 		
-		//ÀıÌâ:±éÀú100ÒÔÄÚµÄÅ¼Êı,Êä³öËùÓĞÅ¼ÊıµÄºÍ,ÒÔ¼°Å¼ÊıµÄ¸öÊı
+		//ä¾‹é¢˜:éå†100ä»¥å†…çš„å¶æ•°,è¾“å‡ºæ‰€æœ‰å¶æ•°çš„å’Œ,ä»¥åŠå¶æ•°çš„ä¸ªæ•°
 		int count=0;
-		int sum =0;  //¼ÇÂ¼ËùÓĞÅ¼ÊıµÄºÍ
+		int sum =0;  //è®°å½•æ‰€æœ‰å¶æ•°çš„å’Œ
 		for (int i = 1; i <= 100; i++) {
 			if(i%2==0) {
 				System.out.print(i+"\t");
@@ -47,8 +47,8 @@ public class ForTest {
 				count++;
 			}
 		}
-		System.out.println("\n×ÜºÍÎª:"+sum);
-		System.out.println("Å¼ÊıµÄ¸öÊıÎª:"+count);
+		System.out.println("\næ€»å’Œä¸º:"+sum);
+		System.out.println("å¶æ•°çš„ä¸ªæ•°ä¸º:"+count);
 	}
 
 }

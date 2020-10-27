@@ -3,10 +3,10 @@ package forloop;
 import java.util.Scanner;
 
 /**
- * ��д�����1ѭ����150,����ÿ�д�ӡһ��ֵ
- * ������ÿ��3�ı������ϴ�ӡ��"foo"
- * ��ÿ��5�ı������ϴ�ӡ"biz"
- * ��ÿ��7�ı������ϴ�ӡ���"baz"
+ * 编写程序从1循环到150,并在每行打印一个值
+ * 另外在每个3的倍数行上打印出"foo"
+ * 在每个5的倍数行上打印"biz"
+ * 在每个7的倍数行上打印输出"baz"
  * 
  * @author ASUS
  *
@@ -24,7 +24,7 @@ public class ForTest1 {
 				System.out.print("baz");
 			}
 			
-			//����
+			//换行
 			System.out.println();
 		}
 	}
