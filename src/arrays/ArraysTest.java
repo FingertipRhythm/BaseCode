@@ -33,8 +33,12 @@ public class ArraysTest {
 		
 		// 5.int binarySearch(int[] a,int key)
 		int[] arr3 = new int[]{-23,-2,0,3,5,7,45,76,234};
-		int search = Arrays.binarySearch(arr3, 45);
-		System.out.println(search);
+		int search = Arrays.binarySearch(arr3, 999);
+		if (search>=0) {
+			System.out.println(search);
+		} else {
+			System.out.println("没有找到!");
+		}
 	}
 
 }
