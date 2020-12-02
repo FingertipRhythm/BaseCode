@@ -1,7 +1,6 @@
-package oop.oopexer;
+package oop.oopexer1;
 
 import java.io.PrintStream;
-import java.util.logging.XMLFormatter;
 
 public class SeeminglyValueTest {
     public static void main(String[] args) {

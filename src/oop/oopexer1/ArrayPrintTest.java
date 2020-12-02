@@ -1,4 +1,4 @@
-package oop.oopexer;
+package oop.oopexer1;
 
 public class ArrayPrintTest {
     public static void main(String[] args) {

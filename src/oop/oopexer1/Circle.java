@@ -1,13 +1,20 @@
 package oop.oopexer1;
-
-/**
- * 定义一个Circle类,包含一个double型的radius属性代表圆的半径,一个findArea()方法返回圆的面积
- */
+//圆
 public class Circle {
-    double radius;  //半径
+    //属性
+    double radius;
 
     //求圆的面积
+    //方式一:
     public double findArea(){
+        //3.14 Math.PI
         return Math.PI*radius*radius;
     }
+
+    //方式二:
+    public void findArea2(){
+        System.out.println("面积为:"+Math.PI*radius*radius);
+    }
+
+
 }

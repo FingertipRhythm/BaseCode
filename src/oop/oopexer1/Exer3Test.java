@@ -1,4 +1,4 @@
-package oop.oopexer;
+package oop.oopexer1;
 
 /**
  * 1. 编写程序,声明一个method方法,在方法中打印一个10*8的*型矩形,在main方法中调用该方法.

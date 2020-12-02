@@ -1,4 +1,4 @@
-package oop.oopexer;
+package oop.oopexer1;
 
 /**
  * 定义一个int型数组:int[] arr = new int[]{12,3,3,34,56,77,432};

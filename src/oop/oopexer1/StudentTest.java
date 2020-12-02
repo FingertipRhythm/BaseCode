@@ -1,4 +1,4 @@
-package oop.oopexer;
+package oop.oopexer1;
 
 /**
  * 对象数组题目:
