@@ -1,4 +1,4 @@
-package ifelse;
+package ifElse;
 
 public class IfTest6 {
 
