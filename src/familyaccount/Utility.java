@@ -19,7 +19,7 @@ public class Utility {
 	public static char readMenuSelection() {
 		char c;
 		for (;;) {
-			String str = readKeyBoard();
+			String str = readKeyBoard(1);
 			c = str.charAt(0);
 			if (c != '1' && c != '2' && c != '3' && c != '4') {
 				System.out.println("选项输入错误,请重新输入:");
@@ -37,7 +37,7 @@ public class Utility {
 	public static int readNumber() {
 		int n;
 		for (;;) {
-			String str = readKeyBoard();
+			String str = readKeyBoard(4);
 			try {
 				n = Integer.parseInt(str);
 				break;
@@ -53,7 +53,7 @@ public class Utility {
 	 * @return
 	 */
 	public static String readString() {
-		String str = readKeyBoard();
+		String str = readKeyBoard(8);
 		return str;
 	}
 
@@ -64,7 +64,7 @@ public class Utility {
 	public static char readConfiguration() {
 		char c;
 		for(;;) {
-			String str = readKeyBoard().toUpperCase();
+			String str = readKeyBoard(1).toUpperCase();
 			c = str.charAt(0);
 			if(c=='Y' || c=='N') {
 				break;
@@ -75,10 +75,17 @@ public class Utility {
 		return c;
 	}
 	
-	public static String readKeyBoard() {
-		String str;
-		str = scanner.next();
-		return str;
+	public static String readKeyBoard(int limit) {
+		String line="";
+		while (scanner.hasNext()){
+			line=scanner.nextLine();
+			if (line.length()<1||line.length()>limit){
+				System.out.println("输入长度(不大于"+limit+")错误,请重新输入:");
+				continue;
+			}
+			break;
+		}
+		return line;
 	}
 
 }
